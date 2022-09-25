@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -43,15 +43,35 @@
     </div>
     <div>
       <span class="myLanguage">My foreign language skill is ...</span>
-      <button onclick="revealMyInfo('En ★☆☆☆☆', '.myLanguage', 'green')">
+      <button
+        onclick="revealMyInfo('En ★☆☆☆☆', '.myLanguage', 'green', 'bgFadeOut')"
+      >
         English
       </button>
-      <button onclick="revealMyInfo('Cn ★☆☆☆☆', '.myLanguage', 'green')">
+      <button
+        onclick="revealMyInfo('Cn ★☆☆☆☆', '.myLanguage', 'green', 'slideIn')"
+      >
         Chinese
       </button>
-      <button onclick="revealMyInfo('Jp ★☆☆☆☆', '.myLanguage', 'green')">
+      <button
+        onclick="revealMyInfo('Jp ★☆☆☆☆', '.myLanguage', 'green', 'heartBeat')"
+      >
         Japanese
       </button>
+    </div>
+    <div>
+      <span class="todayLunch">오늘의 점심 메뉴는 ?</span>
+      <button onclick="choiceTodayLunch()">선택</button>
+    </div>
+    <div>
+      <span class="aboutMe">What do you want to know about me?</span>
+      <span>
+        <button onclick="showMe('name')">Name</button>
+        <button onclick="showMe('age')">Age</button>
+        <button onclick="showMe('job')">Job</button>
+        <button onclick="showMe('favorite')">Favorite</button>
+        <button onclick="showMe('motto')">Motto</button>
+      </span>
     </div>
     <script src="main.js"></script>
   </body>

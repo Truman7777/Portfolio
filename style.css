@@ -6,10 +6,83 @@
   font-style: normal;
 }
 
+@keyframes bgFadeOut {
+  0% {
+    color: green;
+  }
+
+  100% {
+    color: transparent;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    margin-left: 10%;
+  }
+
+  100% {
+    margin-left: 0%;
+  }
+}
+
+@keyframes heartBeat {
+  0% {
+    font-size: 36px;
+  }
+
+  25% {
+    font-size: 44px;
+  }
+
+  50% {
+    font-size: 36px;
+  }
+
+  75% {
+    font-size: 44px;
+  }
+
+  100% {
+    font-size: 36px;
+  }
+}
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 12px;
+}
+
+@media (min-width: 768px) {
+  body {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+div {
+  border: 1px solid black;
+  padding: 10px;
+  width: 350px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
 span {
   font-size: 25px;
   font-family: "HallymGothic-Regular";
-  margin-left: 10px;
+  text-align: center;
 }
 
 .myName {
@@ -21,7 +94,6 @@ button {
   border: 1px solid black;
   padding: 7px;
   margin-top: 10px;
-  margin-left: 50px;
   font-size: 30px;
   font-family: "HallymGothic-Regular";
   box-shadow: -4px -4px 5px 1px orange, 4px 4px 5px 1px orange;
