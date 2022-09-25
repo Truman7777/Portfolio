@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "HallymGothic-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymGothic-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+span {
+  font-size: 25px;
+  font-family: "HallymGothic-Regular";
+  margin-left: 10px;
+}
+
+.myName {
+  text-decoration: underline solid red;
+}
+
+button {
+  background-color: white;
+  border: 1px solid black;
+  padding: 7px;
+  margin-top: 10px;
+  margin-left: 50px;
+  font-size: 30px;
+  font-family: "HallymGothic-Regular";
+  box-shadow: -4px -4px 5px 1px orange, 4px 4px 5px 1px orange;
+  transition: all 0.2s;
+}
+
+button:hover {
+  box-shadow: -4px -4px 7px 5px orange, 4px 4px 7px 5px orange;
+}
+
+button:active {
+  box-shadow: -4px -4px 7px 5px lightcoral, 4px 4px 7px 5px lightcoral;
+  transition: all 0.1s;
+}
